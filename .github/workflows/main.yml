@@ -1,1 +1,48 @@
 
+name: Android debug build
+
+on: [push, workflow_dispatch]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build Android APK
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.11.1'
+
+      - name: Check Android project
+        run: |
+          ls -la
+          find . -maxdepth 4 -name build.gradle -o -name build.gradle.kts
+
+      - name: Build debug APK
+        working-directory: URJA_KENDRA_Android_Server_Assessment_v1.5
+        run: gradle assembleDebug
+
+      - name: Upload APK artifact
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: urja-kendra-debug-apk
+          path: URJA_KENDRA_Android_Server_Assessment_v1.5/**/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
+          retention-days: 7
