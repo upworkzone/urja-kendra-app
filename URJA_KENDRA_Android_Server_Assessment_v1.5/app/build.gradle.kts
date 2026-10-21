@@ -78,4 +78,10 @@ val verifyReleaseConfig by tasks.registering {
         }
     }
 }
-tasks.named("preReleaseBuild").configure { dependsOn(verifyReleaseConfig) }
+
+tasks.configureEach {
+    if (name == "preReleaseBuild") {
+        dependsOn(verifyReleaseConfig)
+    }
+}
+
