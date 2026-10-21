@@ -1,0 +1,26 @@
+Python AST syntax check: PASS
+Files checked: 23
+This does not import dependencies or prove runtime behavior.
+app/main.py
+app/core/config.py
+app/models/user.py
+app/models/assessment.py
+app/models/otp_challenge.py
+app/models/course.py
+app/models/learning.py
+app/api/auth_routes.py
+app/api/assessment_routes.py
+app/api/deps.py
+app/api/learning_routes.py
+app/api/career_routes.py
+app/api/profile_routes.py
+app/api/course_routes.py
+app/services/otp.py
+app/services/auth.py
+app/services/seed.py
+app/services/tokens.py
+app/schemas/auth.py
+app/schemas/assessment.py
+app/schemas/course.py
+app/schemas/learning.py
+app/db/session.py
