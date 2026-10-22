@@ -1,4 +1,4 @@
-package in.urjakendra.app.ui
+package `in`.urjakendra.app.ui
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Spacer
@@ -27,9 +27,9 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import in.urjakendra.app.data.ProgressDto
-import in.urjakendra.app.data.SessionStore
-import in.urjakendra.app.data.UrjaRepository
+import `in`.urjakendra.app.data.ProgressDto
+import `in`.urjakendra.app.data.SessionStore
+import `in`.urjakendra.app.data.UrjaRepository
 import kotlinx.coroutines.launch
 
 @Composable

@@ -1,9 +1,9 @@
-package in.urjakendra.app
+package `in`.urjakendra.app
 
 import com.google.gson.Gson
-import in.urjakendra.app.data.AssessmentDto
-import in.urjakendra.app.data.CertificateEligibilityDto
-import in.urjakendra.app.data.CourseDto
+import `in`.urjakendra.app.data.AssessmentDto
+import `in`.urjakendra.app.data.CertificateEligibilityDto
+import `in`.urjakendra.app.data.CourseDto
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull

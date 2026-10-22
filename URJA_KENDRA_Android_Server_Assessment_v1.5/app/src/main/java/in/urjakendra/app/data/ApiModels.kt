@@ -1,4 +1,4 @@
-package in.urjakendra.app.data
+package `in`.urjakendra.app.data
 
 import com.google.gson.annotations.SerializedName
 

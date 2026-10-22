@@ -1,4 +1,4 @@
-package in.urjakendra.app.ui
+package `in`.urjakendra.app.ui
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -15,8 +15,8 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import in.urjakendra.app.data.SessionStore
-import in.urjakendra.app.data.UrjaRepository
+import `in`.urjakendra.app.data.SessionStore
+import `in`.urjakendra.app.data.UrjaRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

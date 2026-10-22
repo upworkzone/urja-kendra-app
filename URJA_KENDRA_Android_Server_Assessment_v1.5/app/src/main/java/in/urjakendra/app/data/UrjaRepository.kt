@@ -1,4 +1,4 @@
-package in.urjakendra.app.data
+package `in`.urjakendra.app.data
 
 /**
  * Thin repository wrapper for UI/ViewModel use.

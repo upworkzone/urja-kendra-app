@@ -1,4 +1,4 @@
-package in.urjakendra.app.ui
+package `in`.urjakendra.app.ui
 
 /** Reviewed-for-learning draft summaries for EV-01 only. Not a service/repair qualification. */
 data class PilotLesson(val titleEn: String, val titleHi: String, val bodyEn: String, val bodyHi: String, val checkEn: String, val answerEn: String, val checkHi: String, val answerHi: String)

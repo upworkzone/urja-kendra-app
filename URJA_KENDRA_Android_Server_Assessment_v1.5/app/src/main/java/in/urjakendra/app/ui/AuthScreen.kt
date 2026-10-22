@@ -1,4 +1,4 @@
-package in.urjakendra.app.ui
+package `in`.urjakendra.app.ui
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

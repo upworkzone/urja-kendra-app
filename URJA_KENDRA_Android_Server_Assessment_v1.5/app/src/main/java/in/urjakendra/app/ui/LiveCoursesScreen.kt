@@ -1,4 +1,4 @@
-package in.urjakendra.app.ui
+package `in`.urjakendra.app.ui
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -19,10 +19,10 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import in.urjakendra.app.data.CourseDto
-import in.urjakendra.app.data.UrjaRepository
-import in.urjakendra.app.Course
-import in.urjakendra.app.CourseRow
+import `in`.urjakendra.app.data.CourseDto
+import `in`.urjakendra.app.data.UrjaRepository
+import `in`.urjakendra.app.Course
+import `in`.urjakendra.app.CourseRow
 import kotlinx.coroutines.launch
 
 @Composable

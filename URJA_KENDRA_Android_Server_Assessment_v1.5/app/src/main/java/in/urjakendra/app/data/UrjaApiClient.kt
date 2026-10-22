@@ -1,6 +1,6 @@
-package in.urjakendra.app.data
+package `in`.urjakendra.app.data
 
-import in.urjakendra.app.BuildConfig
+import `in`.urjakendra.app.BuildConfig
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

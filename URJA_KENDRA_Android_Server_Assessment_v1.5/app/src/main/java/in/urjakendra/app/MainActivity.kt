@@ -1,4 +1,4 @@
-package in.urjakendra.app
+package `in`.urjakendra.app
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -49,7 +49,7 @@ private val sampleCareers = listOf(
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent { in.urjakendra.app.ui.AuthHost { UrjaApp() } }
+        setContent { `in`.urjakendra.app.ui.AuthHost { UrjaApp() } }
     }
 }
 
@@ -63,8 +63,8 @@ fun UrjaApp() {
     var selectedCareer by remember { mutableStateOf<Career?>(null) }
     var enrolMessage by remember { mutableStateOf<String?>(null) }
     val appContext = androidx.compose.ui.platform.LocalContext.current
-    val repository = remember { in.urjakendra.app.data.UrjaRepository() }
-    val sessionStore = remember { in.urjakendra.app.data.SessionStore(appContext) }
+    val repository = remember { `in`.urjakendra.app.data.UrjaRepository() }
+    val sessionStore = remember { `in`.urjakendra.app.data.SessionStore(appContext) }
     val coroutineScope = rememberCoroutineScope()
 
     MaterialTheme(
@@ -121,7 +121,7 @@ fun UrjaApp() {
                 }
             ) { padding ->
                 when {
-                    selectedLearningCourseId != null -> in.urjakendra.app.ui.LiveLessonScreen(
+                    selectedLearningCourseId != null -> `in`.urjakendra.app.ui.LiveLessonScreen(
                         courseId = selectedLearningCourseId!!,
                         isHindi = isHindi,
                         repository = repository,
@@ -156,7 +156,7 @@ fun UrjaApp() {
                         0 -> HomeScreen(isHindi, onCourses = { selectedTab = 1 }, onCareers = { selectedTab = 3 }, onCourse = { selectedCourse = it })
                         1 -> LiveCoursesScreen(
                             isHindi = isHindi,
-                            repository = in.urjakendra.app.data.UrjaRepository(),
+                            repository = `in`.urjakendra.app.data.UrjaRepository(),
                             onCourse = { selectedCourse = it },
                             modifier = Modifier.padding(padding)
                         )

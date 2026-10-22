@@ -1,4 +1,4 @@
-package in.urjakendra.app.ui
+package `in`.urjakendra.app.ui
 
 import android.content.Intent
 import android.widget.Toast
@@ -21,7 +21,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import in.urjakendra.app.data.*
+import `in`.urjakendra.app.data.*
 
 /** Server-scored assessment UI. Wire into the lesson flow after enrollment and module completion. */
 @Composable

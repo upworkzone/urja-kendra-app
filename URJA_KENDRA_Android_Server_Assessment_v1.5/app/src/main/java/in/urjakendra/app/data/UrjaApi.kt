@@ -1,4 +1,4 @@
-package in.urjakendra.app.data
+package `in`.urjakendra.app.data
 
 import retrofit2.http.Body
 import retrofit2.http.GET
